@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 2px solid red;
+}
+
+/* ESTILO CONTENEDOR PRINCIPAL*/
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+#center-image{
+    width: 400px;
+}
+
+h1{
+    padding: 50px;
+}
+
+p{
+    padding: 50px;
+}
+
+.under-image-section .list{
+    display: flex;
+    background-color: lightblue;
+    /* justify-content: space-evenly; */
+    list-style: none;
+    width: 100vw;
+    padding: 10px;
+    
+}
+
+list{
+    display: flex;
+}
