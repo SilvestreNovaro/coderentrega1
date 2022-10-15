@@ -1,4 +1,4 @@
-// 1er ENTREGA: algoritmo condicional, algoritmo de ciclo, simulador interactivo
+
 
 
 const bienvenida = () =>{
@@ -31,3 +31,53 @@ verPerros();
 // })
 
 
+let botonVerMas = document.createElement("button");
+let botonTexto = document.createTextNode("Conocer camada disponible");
+botonVerMas.appendChild(botonTexto);
+document.body.appendChild(botonVerMas);
+
+botonVerMas.addEventListener("click", function(){
+alert("No hay camada disponible aun");    
+})
+
+
+// CARRITO
+const camadaPerros = [
+    {
+        id: 1,
+        nombre: 'Limon',
+        sexo: "macho",
+        imagen: 'id1.jpg'
+    },
+    {
+        id: 2,
+        nombre: 'Maggie',
+        sexo: "hembra",
+        imagen: 'id2.jpg'
+    },
+    {
+        id: 3,
+        nombre: 'Tango',
+        sexo: "macho",
+        imagen: 'id3.jpg'
+    },
+    {
+        id: 4,
+        nombre: 'Ronnie',
+        sexo: "macho",
+        imagen: 'id4.jpg'
+    },
+    {
+        id: 4,
+        nombre: 'Victoria',
+        sexo: "hembra",
+        imagen: 'id5.jpg'
+    }
+
+];
+
+let carrito = [];
+const DOMitems = document.querySelector('#items');
+const DOMcarrito = document.querySelector('#carrito');
+const DOMtotal = document.querySelector('#total');
+const DOMbotonVaciar = document.querySelector('#boton-vaciar');
