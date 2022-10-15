@@ -76,8 +76,24 @@ const camadaPerros = [
 
 ];
 
+
+
+
 let carrito = [];
 const DOMitems = document.querySelector('#items');
 const DOMcarrito = document.querySelector('#carrito');
 const DOMtotal = document.querySelector('#total');
 const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+
+
+//FUNCION PARA VACIAR EL CARRITO
+
+
+function vaciarCarrito() {
+    // Limpiamos los productos guardados
+    carrito = [];
+    // Renderizamos los cambios
+    renderizarCarrito();
+    //ESTA FUNCION AUN NO LA CREO.
+ }
+ 
