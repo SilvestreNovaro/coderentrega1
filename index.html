@@ -9,19 +9,34 @@
 </head>
 <body>
     <div class="container">
-        <h1>Criadero de Rodhesian Ridgeback</h1>
+        <h1>Centro de adopcion de Rodhesian Ridgeback</h1>
             <section class="under-image-section">
                 <ul class="list">
-                    <li>Aranceles</li>
-                    <li>Equipo</li>
+                    <li>Cuidados necesarios</li>
+                    <li>Info raza</li>
                     <li>Contactenos</li>
-                    <li id="form">Formulario adopciones</li>
+                    <button id="perros-container" type="button"> Equipo </button>
+                    <!-- <button id="lanzar-modal">Formulario adop   ciones</button>                      -->
                 </ul>
-
             </section>
-        <img id ="center-image" src="/root/limones.jpg" alt="">
+            <div class="contenedor">
+                <button class="btn" type="submit" id="lanzar-modal">Formulario de adopciones</button>
+            </div>
+            <div class="contenedor-modal">
+                <div class="modal">
+                    <img src="root/img/pamodal.jpg">
+                    <h1>Bienvenido al formulario de adopciones!</h1>
+                    <form action="">
+                        <input type="text" placeholder="Introduce tu nombre" id="nombre">
+                        <input type="text" placeholder="Nombre del cachorro" id="cachorro">
+                        <button class="btn" type="submit" id="ocultar-modal">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+        <img id ="center-image" src="/root/img/limones.jpg" alt="">
         <div class="container">
-            <div class="row">
+           <div class="row">
                 <main id="items"></main>
                     <h2>Carrito</h2>
                     <ul id="carrito" class="list-group"></ul>
@@ -29,13 +44,19 @@
                     <p class="text-right">Total: <span id="total"></span></p>
                     <button id="boton-vaciar">Vaciar</button>
                 
-            </div>
-        </div>
+            </div> -->
+        <!-- </div> 
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid error numquam provident minima mollitia eveniet repellat accusantium obcaecati voluptas possimus, omnis laboriosam autem perferendis sapiente nostrum eligendi odit totam quidem.</p>
+       
     </div>
+
+     <!-- <img id="under-center" src="/root/img/id5.jpg" >  -->
     <footer>
-        <p>Copyright 2022©</p>
+        <div id="footer">
+            <p>Copyright 2022©</p>
+            <p>Sponsors</p>
+            <p>Donaciones</p>
+        </div>
     </footer>
 
 
